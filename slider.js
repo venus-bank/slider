@@ -77,5 +77,5 @@ superSlide({
   slide: '.slider',
   backBtn: '#back-btn',
   forwardBtn: '#forward-btn',
-  paginationItems: '.nav-item',
+  paginationItems: '.js-pagination-item',
 });

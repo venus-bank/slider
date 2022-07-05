@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="challenge for front end mentor">
+    <meta name="description" content="challenge for front end mentor" />
 
     <!-- font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-          rel="preload" as="style"
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
     />
 
@@ -19,19 +20,33 @@
   </head>
 
   <body>
-    <!-- footer -->
-    <footer class="py-6 text-center">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded with <span class="text-red-500 font-serif"> ❤ </span>
-      by
-      <a
-        href="https://github.com/naif-projects"
-        class="underline underline-offset-2 text-lg"
-        >Naif Sameer</a
-      >.
-    </footer>
+    <div class="slider-wrapper overflow-hidden w-1/2 mx-auto">
+      <div class="slider w-full flex text-6xl transition ease-in duration-500">
+        <div class="slider-item min-w-[100%] h-full bg-red-300">1</div>
+        <div class="slider-item min-w-[100%] h-full bg-green-300">2</div>
+        <div class="slider-item min-w-[100%] h-full bg-yellow-300">3</div>
+        <div class="slider-item min-w-[100%] h-full bg-blue-300">4</div>
+        <div class="slider-item min-w-[100%] h-full bg-purple-300">5</div>
+      </div>
+    </div>
+
+    <div class="fixed bottom-10 left-1/2">
+      <button class="px-2 py-1 bg-blue-700 text-white rounded" id="back-btn">
+        back
+      </button>
+
+      <button class="px-2 py-1 bg-blue-700 text-white rounded" id="forward-btn">
+        forward
+      </button>
+    </div>
+
+    <div class="nav flex bg-blue-300 h-8">
+      <div class="nav-item">1</div>
+      <div class="nav-item">2</div>
+      <div class="nav-item">3</div>
+      <div class="nav-item">4</div>
+      <div class="nav-item">5</div>
+    </div>
 
     <!-- scripts -->
     <script type="module" src="/main.js"></script>
